@@ -100,9 +100,10 @@ h1{
     padding: 0 0.8rem;
 }
 .right-section{
-    flex: 2;
+    flex: 1;
 }
 .showcase {
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -113,18 +114,15 @@ h1{
 .showcase img{
     height: 100vh;
 }
-.showcase .showcase-text {
-    top: 60px;
-    left: 43%;
-    position: absolute;
+.showcase .showcase-text {    
     font-size: 3rem;
     color:black;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 .showcase .secondary-btn {
-    top: 22%;
-    left: 57%;
-    position: absolute;
+  width: 60%;
+  margin: auto;
 }
 .main-footer {
     color: black;
@@ -172,6 +170,39 @@ h1{
 }
   
 .secondary-btn:hover {
-    border-color: #ff7b39;
+    border-color: #cea166;
     color: #ff7b39;
+    background-color: #eac595;
+}
+@media(min-width: 1200px){
+   .left-section{
+       flex: 4;
+   }
+   .right-section{
+    flex: 6;
+  }
+}
+
+@media(max-width: 768px){
+    body {
+        overflow: auto;
+    }    
+    .right-section {
+        display: none;
+    }
+    .left-section {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+    .signin .logo {
+        margin-bottom: 2vh;
+    }
+    
+    .signin .text-input {
+        margin-bottom: 0.7rem;
+    }
+    
+    .main-footer {
+        padding-top: 1rem;
+    }
 }
