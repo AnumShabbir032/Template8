@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Roboto_Condensed";
+    src: url(../Roboto_Condensed/RobotoCondensed-Light.ttf);
+}    
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto_Condensed" ;
+    font-weight:  300;
+    line-height: 1.5;
+    overflow: hidden;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    display: inline;
+    font-weight: 400;
+
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #eac595  0%, #ffffff 100%);
+   
+}
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+.signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+.signin .logo {
+    margin-bottom: 8vh;
+}
+.signin .logo img {
+    width: 5vh;
+}
+.signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+.signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid #cea166;
+    color: rgb(15, 15, 15);
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+.signin .primary-btn {
+    width: 100%;
+}
+.signin .secondary-btn,
+.or,
+.links {
+  width: 60%;
+}
+.signin .links a {
+    display: block;
+    color:rgb(10, 10, 10);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+.signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background:#b18a58;
+}
+.signin .or span {
+    color: #b18a58;
+    padding: 0 0.8rem;
+}
+.right-section{
+    flex: 2;
+}
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(../images/letsgo.jpg) no-repeat bottom center ;
+    height: 100vh;
+    text-align: center;
+}
+.showcase img{
+    height: 100vh;
+}
+.showcase .showcase-text {
+    top: 60px;
+    left: 43%;
+    position: absolute;
+    font-size: 3rem;
+    color:black;
+    margin-bottom: 1.5rem;
+}
+.showcase .secondary-btn {
+    top: 22%;
+    left: 57%;
+    position: absolute;
+}
+.main-footer {
+    color: black;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 5rem;
+}
+.main-footer a {
+    color: #b18a58;
+    text-decoration: underline;
+}
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 24px;
+    font-weight: 500;
+    background:#cea166;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+  
+.primary-btn:hover {
+    background-color: #ff7b39;
+}
+  
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #cea166;
+    border-radius: 24px;
+    font-weight: 500;
+    background: none;
+    color: #cea166;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+  
+.secondary-btn:hover {
+    border-color: #ff7b39;
+    color: #ff7b39;
+}
